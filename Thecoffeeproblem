@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+void main(){
+
+int X,P,temp,sum=0;
+scanf("%d %d",&X,&P);
+while(temp>0){
+ temp = (X - ((P*X)/100));
+ sum = X + temp;
+ X = temp;
+ }
+ 
+ printf("%d",sum);
+ getch();
+ }
