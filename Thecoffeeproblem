@@ -3,12 +3,13 @@
 #include<math.h>
 void main(){
 
-int X,P,temp,sum=0;
+int X,P,temp1,temp,sum=0;
 scanf("%d %d",&X,&P);
-while(temp>0){
+while(X!=0){
  temp = (X - ((P*X)/100));
- sum = X + temp;
- X = temp;
+ temp1 = trunc(temp);
+ sum = X + temp1;
+ X = temp1;
  }
  
  printf("%d",sum);
